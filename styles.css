@@ -4,12 +4,10 @@ html {
   height: 100%;
   overflow: hidden;
 }
-
 .split-screen-container {
   display: block;
   height: 200vh;
 }
-
 .left,
 .right {
   flex: 1;
@@ -18,7 +16,6 @@ html {
   display: flex;
   flex-direction: column;
 }
-
 img {
   object-fit: cover;
 }
