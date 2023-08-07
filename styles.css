@@ -6,7 +6,7 @@ html {
 }
 
 .split-screen-container {
-  display: flex;
+  display: BLOCK;
   height: 200vh;
 }
 
