@@ -1,11 +1,10 @@
 html {
   margin: 0;
   padding: 0;
-  height: 100%;
   overflow: hidden;
 }
 .split-screen-container {
-  display: flex;
+  display: block;
   height: calc(100vh - (16px *2)); 
 }
 .left,
