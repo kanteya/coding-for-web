@@ -6,7 +6,6 @@ html {
 }
 .split-screen-container {
   display: flex;
-
 }
 .left,
 .right {
