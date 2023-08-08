@@ -4,7 +4,7 @@ html {
   overflow: hidden;
 }
 .split-screen-container {
-  display: block;
+  display: flex;
   height: calc(100vh - (16px *2)); 
 }
 .left,
