@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    align-items: middle;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    font-family: Arial, sans-serif;
+}
+.box:hover {
+    background-color: #a65bf7;
+}
+
+.button {
+    width: 95px;
+    height: 30px;
+    background-color: #fec770;
+    color: #222;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.button:hover {
+    background-color: #f6a42a;
+}
