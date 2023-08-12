@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Split Screen Scrolling</title>
+</head>
+
+<body>
+    <div class="split-screen-container">
+        <div class="left">
+            <img src="img.jpg">
+            <img src="img.jpg">
+            <img src="img.jpg">
+        </div>
+        <div class="right">
+            <img src="img.jpg">
+            <img src="img.jpg">
+            <img src="img.jpg">
+        </div>
+    </div>
+    <style>
+        html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .split-screen-container {
+            display: flex;
+            height: calc(100vh - (16px *2));
+        }
+
+        .left,
+        .right {
+            flex: 1;
+            height: auto;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            object-fit: cover;
+        }
+    </style>
+</body>
+
+</html>
