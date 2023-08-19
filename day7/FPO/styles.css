@@ -1,0 +1,576 @@
+/* fonts */
+
+@font-face  {
+    font-family: 'Space Mono Bold';
+    src: url('Fonts/SpaceMono-Bold.ttf') format('truetype');
+}
+
+@font-face  {
+  font-family: 'Space Mono Regular';
+  src: url('Fonts/SpaceMono-Regular.ttf') format('truetype');
+}
+
+/* Inconsolata Family*/
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('Inconsolata-VariableFont_wdth,wght.ttf');
+}
+
+
+/* CSS RESETS */
+
+
+*   {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C5B7F0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8A7AF5;
+}
+
+
+body {
+    padding: 40px 10%;   
+    background-color: #FFF4EB;
+  }
+  
+  section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+
+  div{
+    font-family: 'Space Mono Regular';
+    color: #1500FF;
+    font-size: 16px;
+  }
+  
+  section > h2 {
+  text-align: left;
+  line-height: 1;
+  border-bottom: 0.5px solid #050505;
+  padding-bottom: 8px;
+  font-family: 'Space Mono Regular';
+  font-size: 36px;
+  }
+
+  h3{
+    font-family: 'Space Mono Regular';
+    margin-top: 10px ;
+  }
+
+  section > h4 {
+    font-family: 'Space Mono Regular';
+    font-size: 20px;
+    text-align: left;
+    line-height: 1;
+    border-bottom: 1px solid black;
+    border-bottom-style: dotted;
+    padding-bottom: 8px;
+    }
+  
+  section > em {
+  display: block;
+  margin: 8px 0;
+  text-align: center;
+  }
+  
+  section > div {
+    margin: 10px;
+    }
+
+#fpo{
+    color: #333;
+    text-decoration: none;
+}
+
+#fpo:hover{
+    color: #1500FF;
+    text-decoration: none;
+}
+
+#pad{
+    color: #333;
+    text-decoration: none;
+}
+
+#pad:hover{
+    color: #1500FF;
+    text-decoration: none;
+}
+
+.navbar {
+    font-family: Space Mono Regular;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: left 0.3s ease-in-out;
+}
+
+.sticky {
+    position: fixed;
+    width: 10%;
+    left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar-item {
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+    color: #333;
+}
+
+.navbar-item:hover {
+    color: #4F3DFA;
+}
+
+
+
+@media screen and (max-width:1024px) and (min-width:600px) {
+
+  /* Homepage */
+
+  h1{
+    margin-top: 20px;
+    font-family: 'Space Mono Regular';
+    font-size: 48px;
+  }
+
+  #homepage h3{
+    font-family: 'Space Mono Regular';
+    margin-top: 10px ;
+  }
+
+#header{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+#header_img{
+    max-height: 100px;
+}
+
+#hero{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+#hero_img{
+    max-height: 200px;
+}
+
+#footer{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+#footer_img{
+    max-height: 300px;
+}
+
+#print{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+#print_img{
+    max-height: 300px;
+}
+
+/* About FPO*/
+
+#about_body{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+#about_body_img{
+    max-height: 300px;
+}
+
+
+/* CONTACT SECTION */
+
+#contact_body{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+#contact_img{
+    max-height: 250px;
+}
+
+/* PRINT PROJECT SECTION */
+
+#print_project{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+#print_project_img{
+    max-height: 400px;
+}
+
+#print_project2{
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+#print_project_img2{
+    max-width: 440px;
+}
+
+/* RSS & ADS SECTION */
+
+#rd{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+#rss_img{
+    max-height: 300px;
+}
+
+#rd2{
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+}
+
+#ads_img{
+    max-height: 300px;
+}
+
+}
+
+@media screen and (max-width:1920px) and (min-width:1024px) {
+
+    /* Homepage */
+  
+    h1{
+      margin-top: 20px;
+      font-family: 'Space Mono Regular';
+      font-size: 48px;
+    }
+  
+    #homepage h3{
+      font-family: 'Space Mono Regular';
+      margin-top: 10px ;
+    }
+  
+  #header{
+      font-size: 18px;
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+  }
+  
+  #header_img{
+      max-height: 100px;
+  }
+  
+  #hero{
+      font-size: 18px;
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+  }
+  
+  #hero_img{
+      max-height: 200px;
+  }
+  
+  #footer{
+      font-size: 18px;
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+  }
+  
+  #footer_img{
+      max-height: 300px;
+  }
+  
+  #print{
+      font-size: 18px;
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+  }
+  
+  #print_img{
+      max-height: 300px;
+  }
+  
+  /* About FPO*/
+  
+  #about_body{
+      font-size: 18px;
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+  }
+  
+  #about_body_img{
+      max-height: 300px;
+  }
+  
+  
+  /* CONTACT SECTION */
+  
+  #contact_body{
+      font-size: 18px;
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+  }
+  
+  #contact_img{
+      max-height: 250px;
+  }
+  
+  /* PRINT PROJECT SECTION */
+  
+  #print_project{
+      font-size: 18px;
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+  }
+  
+  #print_project_img{
+      max-height: 400px;
+  }
+  
+  #print_project2{
+      font-size: 18px;
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+  }
+  
+  #print_project_img2{
+      max-width: 440px;
+  }
+  
+  /* RSS & ADS SECTION */
+  
+  #rd{
+      font-size: 18px;
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+  }
+  
+  #rss_img{
+      max-height: 300px;
+  }
+  
+  #rd2{
+      font-size: 18px;
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+  }
+  
+  #ads_img{
+      max-height: 300px;
+  }
+  
+  }
+
+  @media screen and (max-width:850px) {
+
+    /* Homepage */
+
+    h1{
+      margin-top: 20px;
+      font-family: 'Space Mono Regular';
+      font-size: 32px;
+    }
+
+    section h2{
+        font-size: 14px;
+    }
+
+    section h3{
+        font-size: 14px;
+    }
+  
+    #homepage h3{
+      font-family: 'Space Mono Regular';
+      margin-top: 10px ;
+    }
+  
+  #header{
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+  }
+  
+  #header_img{
+      max-height: 100px;
+  }
+  
+  #hero{
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+  }
+  
+  #hero_img{
+      max-height: 200px;
+  }
+  
+  #footer{
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+  }
+  
+  #footer_img{
+      max-height: 300px;
+  }
+  
+  #print{
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+  }
+  
+  #print_img{
+      max-height: 300px;
+  }
+  
+  /* About FPO*/
+  
+  #about_body{
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+  }
+  
+  #about_body_img{
+      max-height: 300px;
+  }
+  
+  
+  /* CONTACT SECTION */
+  
+  #contact_body{
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+  }
+  
+  #contact_img{
+      max-height: 250px;
+  }
+  
+  /* PRINT PROJECT SECTION */
+  
+  #print_project{
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+  }
+  
+  #print_project_img{
+      max-height: 400px;
+  }
+  
+  #print_project2{
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+  }
+  
+  #print_project_img2{
+      max-width: 440px;
+  }
+  
+  /* RSS & ADS SECTION */
+  
+  #rd{
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+  }
+  
+  #rss_img{
+      max-height: 300px;
+  }
+  
+  #rd2{
+      font-size: 14px;
+      display: flex;
+      flex-direction:column;
+      gap: 5%;
+  }
+  
+  #ads_img{
+      max-height: 300px;
+  }
+  
+  }
+
+
+@media screen and (max-width: 1040px) {
+
+#navbar{
+    display: none;
+}
+    
+}
