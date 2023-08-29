@@ -1,0 +1,18 @@
+
+body
+|
+|___header
+|
+|___div.content-wrap
+|	|
+|	|___main
+|	|	|___h1
+|	|	|___figure
+|	|	|___p
+|	|	|___ ...
+|	|
+|	|___aside
+|		|___nav
+|
+|
+|___footer
