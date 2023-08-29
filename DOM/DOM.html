@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DOM STRUCTURE</title>
+    <style>
+        body {
+            margin-left: 20px;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            font-weight: bold;
+            background-color: #111;
+            color: rgb(255, 156, 69);
+        }
+
+        h1 {
+            font-size: 26px;
+            font-family: 'Courier New', Courier, monospace;
+            width: 22ch;
+            animation: typing 2s steps(18), blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>DOM STRUCTURE - (A2.1)</h1>
+    <p>
+        HTML<br><br>
+        ---- HEAD<br>
+        -------- META<br>
+        -------- LINK<br>
+        -------- TITLE<br><br>
+        ---- BODY<br>
+        -------- DIV<br>
+        ------------ H1<br>
+        ---------------- A<br>
+        ---------------- A<br>
+        -------- DIV<br>
+        ------------ DIV<br>
+        ---------------- FIGURE<br>
+        -------------------- IMG<br>
+        -------------------- FIGCAPTION<br>
+        ------------ DIV<br>
+        ---------------- FIGURE<br>
+        -------------------- IMG<br>
+        -------------------- FIGCAPTION<br><br>
+        ---- GRAMMARLY-DESKTOP-INTEGRATION<br>
+    </p>
+</body>
