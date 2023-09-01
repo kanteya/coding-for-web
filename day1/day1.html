@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Screen Scrolling - KOCHI</title>
+</head>
+
+<body>
+    <br>
+    <div class="split-screen-container">
+        <div class="left">
+            <img src="images/img1.png"><BR>
+            <img src="images/img2.png"><BR>
+            <img src="images/img3.png">
+        </div>
+        <div class="right">
+            <p>These are some of the pictures from my trip to the Kochi-Bienalle this year.</p>
+            <img src="images/img4.png">
+            <p>"CODING FOR WEB" - Assignment for DAY 1</p>
+        </div>
+    </div>
+    <br>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #C5B7F0;
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000;
+            color: #e2dcf2;
+        }
+
+        p {
+            font-family: 'Garamond', serif;
+            margin: 20px;
+            font-weight: bold;
+        }
+
+        .split-screen-container {
+            display: flex;
+            height: calc(100vh - (16px *2));
+        }
+
+        .left,
+        .right {
+            flex: 1;
+            height: auto;
+            overflow-y: scroll;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 20px;
+        }
+
+        img {
+            object-fit: cover;
+            margin: 20px;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    </style>
+</body>
+
+</html>
