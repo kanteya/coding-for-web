@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WW2 through the years</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-kml/dist/leaflet-kml.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Include PapaParse for CSV parsing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-omnivore/0.3.4/leaflet-omnivore.min.js"></script>
+
+    <!-- Include wellknown library for WKT parsing -->
+    <script src="https://unpkg.com/wellknown@0.6.1/wellknown.js"></script>
+</head>
+
+<body>
+    <header>
+        <h4>Portraying WW2 - <span id="year">1939</span></h4>
+    </header>
+
+    <div class="split-screen-container">
+        <div class="left">
+            <div id="map"></div><br>
+            <input type="range" min="1" max="3" value="1" class="slider" id="myRange" oninput="updateYear(this.value)">
+        </div>
+        <div class="right">
+            <h4>Brief Description</h4>
+            <p>World War II, spanning from 1939 to 1945, was a seismic global conflict triggered by Nazi Germany's
+                invasion of Poland. Rooted in the aftermath of World War I, economic hardships, and the rise of fascist
+                regimes, the war saw pivotal moments like Germany's lightning-fast conquests across Europe, the heroic
+                defense in the Battle of Britain, and the United States' entry after the Pearl Harbor attack in 1941.<br><br>
+
+                As the war raged on, Allied forces mounted a massive amphibious assault on Normandy on D-Day in 1944,
+                which marked a turning point in the conflict. The relentless Soviet advance from the east also played a
+                crucial role in defeating Nazi Germany. The war's devastating toll culminated in the unconditional
+                surrender of both Germany and Japan in 1945.<br><br>
+
+                World War II reshaped the global landscape, leading to the establishment of the United Nations and
+                profound social, political, and economic changes, while leaving an indelible mark on the collective
+                memory of humanity as one of the deadliest conflicts in history.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="namechange.js"></script>
+</body>
+
+</html>

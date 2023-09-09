@@ -1,0 +1,140 @@
+html {
+    background-color: #222;
+}
+
+h4 {
+    color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Verdana', sans-serif;
+    text-align: center;
+    font-size: 2.5vh;
+}
+
+p {
+    color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Verdana', sans-serif;
+    font-size: 14px;
+    padding-right: 25px ;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C5B7F0;
+}
+
+
+.split-screen-container {
+    display: grid;
+    grid-template-columns: 70vw 1fr; /* 70% for left, 30% for right */
+}
+
+.left {
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#map {
+    margin: auto;
+    width: 65vw;
+    height: 75vh;
+}
+
+.slidecontainer {
+    width: 150vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 50vw;
+    height: 8px;
+    border-radius: 2px;
+    background: antiquewhite;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: calc(15vw / 2);
+    margin-right: calc(15vw / 2);
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 20px;
+    background: #FF8A00;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #FF8A00;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    html {
+        background-color: #222;
+        overflow: scroll;
+    }
+
+    .split-screen-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left, .right {
+        width: 100%;
+    }
+
+    #map {
+        margin: auto;
+        width: 90vw;
+        height: 50vh;
+    }
+
+    .slider {
+        width: 80vw;
+    }
+
+    p {
+        margin: 20px;
+        padding-right: 0px;
+    }
+}
+
+@media (min-width: 1921px) {
+    p {
+        font-size: 2vh;
+    }
+}
+
+.custom-tooltip {
+    background-color: #FFFFFF;
+    border: 1px solid #333333;
+    padding: 6px;
+}
