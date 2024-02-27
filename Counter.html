@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    #counter {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+    #clickButton {
+      font-size: 18px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #clickButton:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chhavi's Mess Up Counter</h1>
+  <button id="clickButton">Press if you mess up!</button>
+  <div id="counter">0</div>
+
+  <script>
+    // Get the counter element
+    var counterElement = document.getElementById('counter');
+
+    // Get the button element
+    var clickButton = document.getElementById('clickButton');
+
+    // Check if 'clicks' is stored in local storage
+    if(localStorage.getItem('clicks')) {
+      // If it is, set the counter value to the stored value
+      counterElement.textContent = localStorage.getItem('clicks');
+    }
+
+    // Add event listener to the button
+    clickButton.addEventListener('click', function() {
+      // Increment the counter
+      var clicks = parseInt(counterElement.textContent) + 1;
+      // Update the counter element
+      counterElement.textContent = clicks;
+      // Store the updated counter value in local storage
+      localStorage.setItem('clicks', clicks);
+    });
+  </script>
+</body>
+</html>
